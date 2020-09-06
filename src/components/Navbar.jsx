@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import logo from "../assets/devswag-logo.svg";
 import "../sass/3-layout/_navbar.scss";
+import "../App.scss";
 import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
@@ -11,11 +12,18 @@ export default class Navbar extends Component {
 		
 		return (
 			<Fragment>
-			<div className = "navtop">
+			<div className = "navbar">
 			<header className = "header">
+			<input className="menu-btn" type="checkbox" id="menu-btn" />
+					<label className="menu-icon" for="menu-btn">
+						<span className="navicon"></span>
+					</label>
 				<div>
-					<img className = "header__logo" src= {logo} alt="logo" />
+					<Link to = "/" ><img className = "header__logo" src= {logo} alt="logo" /> </Link>
+					
 				</div>
+
+				
 
 				<nav className = "header__nav">
 					<li className = "header__navLink"><Link  to = "/">Home</Link></li>
@@ -25,8 +33,8 @@ export default class Navbar extends Component {
 				</nav>
 			</header>
 
-			</div>
-
+			
+</div>
 			</Fragment>
 		);
 	}
