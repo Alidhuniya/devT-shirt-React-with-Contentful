@@ -5,14 +5,14 @@ import MailchimpSubscribe from './MailchimpSubscribe';
 
 // a basic form
 const CustomForm = ({ status, message, onValidated }) => {
-  let email, name;
+  let email;
   const submit = () =>
     email &&
-    name &&
+  
     email.value.indexOf("@") > -1 &&
     onValidated({
-      EMAIL: email.value,
-      NAME: name.value
+      EMAIL: email.value
+     
     });
 
     const Msg = {
@@ -36,13 +36,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           dangerouslySetInnerHTML={{ __html: message }}
         />
       )}
-      <input
-      className = "nameinput"
-        ref={node => (name = node)}
-        type="text"
-        placeholder="Your name"
-      />
-      <br />
+     
       <input
       className = "nameinput"
         ref={node => (email = node)}
@@ -52,7 +46,7 @@ const CustomForm = ({ status, message, onValidated }) => {
       <br />
       <div className ="send">
       <button className = "sbmt"  onClick={submit}>
-        Submit
+        Sign up
       </button>
       </div>
     </div>
@@ -72,8 +66,9 @@ class Subscribe extends Component {
             <div className = "home__rightContainer">
 
             <div className = "mail">
-            <h1>Subscribe to Get Early Update</h1>
-            <p>Notify Me</p>
+            <h1>Want to be in the loop?</h1>
+            <p>3000+ people get notified of new swag opportunities! </p>
+
             <MailchimpSubscribe
               url={url}
               render={({ subscribe, status, message }) => (
@@ -91,6 +86,14 @@ class Subscribe extends Component {
             </div>
             
             </section>
+
+            <div>
+            <h1>CALL NOW: +977-9811435099</h1>
+            <p>Developed by Ali Dhuniya  </p>
+            <p>All Right Reserved &copy; 2020 </p>
+            </div>
+
+
             </Fragment>
     );
   }
