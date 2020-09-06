@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 // import App from "./App";
-import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 import "./sass/basic-styles-scss/abstract-and-base.scss";
 
@@ -10,7 +10,7 @@ import {
   BrowserRouter as Router
 } from "react-router-dom";
  
-ReactDom.render(<Router><Navbar /></Router>, document.getElementById("root"));
+ReactDom.render(<Router><Footer /></Router>, document.getElementById("root"));
 
 
 if ('serviceWorker' in navigator) {
