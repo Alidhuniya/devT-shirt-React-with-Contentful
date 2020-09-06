@@ -1,7 +1,6 @@
 import React, { Fragment, Component} from 'react';
 import MailchimpSubscribe from './MailchimpSubscribe';
-
-
+import "../sass/3-layout/_footer.scss";
 
 // a basic form
 const CustomForm = ({ status, message, onValidated }) => {
@@ -66,8 +65,8 @@ class Subscribe extends Component {
             <div className = "home__rightContainer">
 
             <div className = "mail">
-            <h1>Want to be in the loop?</h1>
-            <p>3000+ people get notified of new swag opportunities! </p>
+            <h1 className = "mail__h1">Want to be in the loop?</h1>
+            <p className = "mail__p0">3000+ people get notified of new swag opportunities! </p>
 
             <MailchimpSubscribe
               url={url}
@@ -87,10 +86,10 @@ class Subscribe extends Component {
             
             </section>
 
-            <div>
-            <h1>CALL NOW: +977-9811435099</h1>
-            <p>Developed by Ali Dhuniya  </p>
-            <p>All Right Reserved &copy; 2020 </p>
+            <div className = "footer">
+            <h1 className = "footer__h1">CALL NOW: +977-9811435099</h1>
+            <p className = "footer__p0">Developed by Ali Dhuniya  </p>
+            <p className = "footer__p1">All Right Reserved &copy; 2020 </p>
             </div>
 
 

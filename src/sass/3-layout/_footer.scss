@@ -1,0 +1,116 @@
+.mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media all and (max-width: 700px) {
+        margin-left: 7rem;
+        margin-right: 7rem;
+        display: block;
+    }
+
+    @media all and (max-width: 500px) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        
+    }
+ 
+}
+
+.mail__h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin: 0 0 3px;
+    text-transform: none;
+
+    @media all and (max-width: 700px) {
+        text-align: center;
+     }
+  
+}
+
+.mail__p0 {
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    color: #5f5f5f;
+
+    @media all and (max-width: 700px) {
+        text-align: center;
+     }
+}
+
+.inputfield {
+    width: 50%;
+    margin-top: 2rem;
+
+    @media all and (max-width: 700px) {
+       width: 100%;
+    }
+ 
+}
+
+.send {
+    display: flex;
+    justify-content: center;
+}
+
+.nameinput {
+    font-size: 16px;
+    line-height: 1.5;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 48px;
+    margin: 0;
+    padding: 8px 10px;
+    
+    transition: color .08s ease-in,-webkit-box-shadow .08s ease-in;
+    transition: box-shadow .08s ease-in,color .08s ease-in;
+   
+    color: #303030;
+    border: 0;
+    border-radius: 6px;
+    background: #fff;
+    
+    box-shadow: 0 0 0 1px rgba(50,50,93,.1), 0 2px 5px 0 rgba(50,50,93,.05), 0 1px 1px 0 rgba(0,0,0,.05);
+    
+    appearance: none;
+}
+
+.sbmt {
+    font-weight: 500;
+    line-height: 48px;
+    position: relative;
+    display: inline-block;
+    min-width: 120px;
+    height: 48px;
+    padding: 0 1rem;
+    text-align: center!important;
+    white-space: nowrap;
+    text-decoration: none;
+    text-transform: none;
+    color: #fff;
+    border: none!important;
+    border-radius: 6px!important;
+    cursor: pointer;
+    background: #ff4500;
+    -webkit-box-shadow: inset 0 0 0 1px rgba(50,50,93,.1), 0 2px 5px 0 rgba(50,50,93,.1), 0 1px 1px 0 rgba(0,0,0,.07);
+    box-shadow: inset 0 0 0 1px rgba(50,50,93,.1), 0 2px 5px 0 rgba(50,50,93,.1), 0 1px 1px 0 rgba(0,0,0,.07);
+}
+
+.footer {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__h1 {
+    color: #484848;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: center;
+}
