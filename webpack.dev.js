@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const common = require("./webpack.common");
 const { merge } = require("webpack-merge");
+const Dotenv = require('dotenv-webpack');
 
 module.exports = merge(common, {
   mode: 'development',
@@ -41,6 +42,16 @@ module.exports = merge(common, {
     
     filename: '[name].css',
     chunkFilename: '[id].css',
-  })],
+  }),
+
+  new Dotenv({
+    path: '.env',
+    systemvars: true// load this now instead of the ones in '.env'
+   
+  }),
+
+],
+
+ 
 
 });

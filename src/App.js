@@ -30,6 +30,7 @@ class App extends Component {
 						<Store />
 					</Route>
 
+					
 					<Route path="/payment" exact>
 						<Payment />
 					</Route>
