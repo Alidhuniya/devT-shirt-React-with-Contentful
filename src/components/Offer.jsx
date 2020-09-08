@@ -22,7 +22,7 @@ export default class Offer extends Component {
         
 
       
-        <h1>Best Offer</h1>
+   
         const postData = data.map((offer, key) => (
           
          
@@ -50,7 +50,7 @@ export default class Offer extends Component {
 
     
     return (
-      <div>
+      <div className = "offering">
         {this.state.postData}
       </div>
     );

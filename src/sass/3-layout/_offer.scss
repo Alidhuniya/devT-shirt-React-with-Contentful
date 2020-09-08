@@ -1,0 +1,24 @@
+.offering {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7rem;
+    margin-right: 7rem;
+
+    @media all and (max-width: 1270px) {
+        flex-wrap: wrap;
+    }
+
+    @media all and (max-width: 930px) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    @media all and (max-width: 780px) {
+        justify-content: center;
+    }
+
+    @media all and (max-width: 423px) {
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+  }

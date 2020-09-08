@@ -9,6 +9,7 @@
     max-width: 350px;
     width: 100%;
     margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .offer__thumb {
@@ -25,9 +26,81 @@
 	transition: all 300ms linear;
     width: auto;
     height: 100%;
+    
 
     &:hover {
         transform: scale(0.9);
     }
 
+}
+
+.offer__ele {
+    padding-left: 1.5rem;
+}
+
+.offer__p {
+  
+}
+
+.offer__p,.offer__p1 {
+    font-size: 2rem;
+    margin-top: -1rem;
+}
+
+
+
+
+.offer__h1 {
+    padding-top: 1rem;
+    padding-bottom: 1.3rem;
+}
+
+.offer__p2 {
+    
+}
+
+.offer__btn {
+    padding-bottom: 1.5rem;
+}
+
+.offer__price {
+    font-size: 1.7rem;
+}
+
+.offer__rs {
+    padding-left: 1.3rem;
+    font-weight: 500;
+    color: #19DCAF;
+}
+
+.offer__discount {
+    color: #FE5156;
+}
+
+.offer__btnBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.offer__btn {
+    color: #2868cb;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    padding: .1rem 2rem;
+    margin-top: 1rem;
+    border-radius: .6rem;
+    border: 2px solid #2868cb;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        color: #fff;
+        background: #2868CB;
+    }
+}
+
+.offer__desc {
+    padding-right: 0.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 1.5rem;
 }
