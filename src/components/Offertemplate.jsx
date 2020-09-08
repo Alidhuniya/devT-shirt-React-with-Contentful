@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import "./../sass/3-layout/_offertemplate.scss";
 
+
 function Offertemplate(props) {
 	return (
 		<Fragment>
