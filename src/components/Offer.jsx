@@ -1,8 +1,9 @@
 
+
 import React, { Component } from "react";
-import { Client } from "../Client.js";
 import "../sass/3-layout/_offer.scss";
-// import ReactPaginate from "react-paginate";
+import axios from "axios";
+import ReactPaginate from "react-paginate";
 import Offertemplate from './Offertemplate';
 
 
@@ -12,53 +13,48 @@ export default class Offer extends Component {
     this.state = {
       offset: 0,
       data: [],
-    //   perPage: 2,
-    //   currentPage: 0
+      perPage: 1,
+      currentPage: 0
     }
     this.handlePageClick = this.handlePageClick.bind(this);
   }
   receivedData() {
-   
-	Client.getEntries({
-		'content_type': 'offertshirt',
-		'limit': 3,
-	  })
-	  .then((res) => {
-		// console.log(res);
-		const data = res.items;
+    axios
+      .get("https://devswag.herokuapp.com/offers")
+      .then((res) => {
+        const data = res.data;
         console.log(data);
         const slice = data.slice(
           this.state.offset,
-        //   this.state.offset + this.state.perPage
-		);
+          this.state.offset + this.state.perPage
+        );
 
-		const postData = slice.map((offer, key) => (
+      
+       
+        const postData = slice.map((post, key) => (
           
          
-			<React.Fragment>
-			
-			  <Offertemplate offer={offer} />
-			  {/* <p>Contents: {post.content} </p> */}
-			</React.Fragment>
-		  ));
-  
-		  this.setState({
-			// pageCount: Math.ceil(data.length / this.state.perPage),
-  
-			postData
-		  });
-		
-		  });
+          <React.Fragment>
+          
+            <Offertemplate post={post} />
+            {/* <p>Contents: {post.content} </p> */}
+          </React.Fragment>
+        ));
 
-   
+        this.setState({
+          pageCount: Math.ceil(data.length / this.state.perPage),
+
+          postData
+        });
+      });
   }
   handlePageClick = (e) => {
-    // const selectedPage = e.selected;
-    // const offset = selectedPage * this.state.perPage;
+    const selectedPage = e.selected;
+    const offset = selectedPage * this.state.perPage;
 
     this.setState(
       {
-        // currentPage: selectedPage,
+        currentPage: selectedPage,
         offset: offset
       },
       () => {
@@ -84,7 +80,7 @@ export default class Offer extends Component {
 
      
         {this.state.postData}
-        {/* <ReactPaginate
+        <ReactPaginate
           previousLabel={"prev"}
           nextLabel={"next"}
           breakLabel={"..."}
@@ -96,7 +92,7 @@ export default class Offer extends Component {
           containerClassName={"pagination"}
           subContainerClassName={"pages pagination"}
           activeClassName={"active"}
-        /> */}
+        />
       </div>
     );
   }

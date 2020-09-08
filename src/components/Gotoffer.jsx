@@ -12,7 +12,7 @@ class Gotoffer extends Component {
             <Offer />
           </Route>
         <Switch>
-          <Route exact path="/:id">
+          <Route exact path="/offers/:id">
             <Offeritem />
           </Route>
         </Switch>

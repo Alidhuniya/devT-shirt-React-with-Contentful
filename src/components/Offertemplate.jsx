@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import "../App.scss";
 
 function Offertemplate(props) {
   return (
@@ -9,9 +8,9 @@ function Offertemplate(props) {
     
     </div>
       <div>
-        <Link to={`${props.offer.sys.id}`}>
+        <Link to={`/offers/${props.post.id}`}>
           <div className="image">
-         <img className = "img" src = {props.offer.fields.offerimg.fields.file.url} alt="t-shhirt" />
+         <h1>{props.post.title}</h1>
           </div>
         </Link>
       </div>
