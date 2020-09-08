@@ -1,0 +1,33 @@
+
+.offer {
+  background: #fff;
+  max-width: 350px;
+  width: 100%;
+}
+
+.offer__container {
+    max-width: 350px;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.offer__thumb {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #ededed;
+    background: #fff;
+}
+
+.offer__img {
+    transform: scale(1);
+	transition: all 300ms linear;
+    width: auto;
+    height: 100%;
+
+    &:hover {
+        transform: scale(0.9);
+    }
+
+}
