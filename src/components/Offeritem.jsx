@@ -24,7 +24,7 @@ function Offeritem() {
   if (singleItem) {
     return (content = (
       <Fragment>
-        <div className = "item">
+        <div className = "item other-item">
        <div className = "item__img">
        <Magnifier src={singleItem.thumbnail.url}  height = {400}  />
        </div>

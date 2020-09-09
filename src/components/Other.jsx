@@ -4,10 +4,9 @@ import React, { Component } from "react";
 import "../sass/3-layout/_offer.scss";
 import axios from "axios";
 import Offertemplate from './Offertemplate';
+import "../sass/3-layout/_other.scss";
 
-
-
-export default class Offer extends Component {
+export default class Other extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,7 +15,7 @@ export default class Offer extends Component {
   }
   receivedData() {
     axios
-      .get("https://devswag.herokuapp.com/offers?_sort=id:DESC&_limit=3")
+      .get("https://devswag.herokuapp.com/offers?_sort=id:DESC")
       .then((res) => {
         const data = res.data;
         console.log(data);
@@ -51,7 +50,7 @@ export default class Offer extends Component {
 
     
     return (
-      <div className = "offering">
+      <div className = "offering other-item">
         {this.state.postData}
       </div>
     );
