@@ -15,7 +15,7 @@ export default class Offer extends Component {
   }
   receivedData() {
     axios
-      .get("https://devswag.herokuapp.com/offers?_sort=id:DESC")
+      .get("https://devswag.herokuapp.com/offers?_sort=id:DESC&_limit=3")
       .then((res) => {
         const data = res.data;
         console.log(data);

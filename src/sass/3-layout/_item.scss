@@ -6,6 +6,11 @@
     margin-top: 10rem;
 }
 
+.item__img {
+    max-width: 380px;
+    width: 100%;
+}
+
 .item__rightContent {
     margin-right: 7rem;
 }
@@ -90,6 +95,10 @@
         
         font-size: 0.78rem;
     }
+
+    .item__h1 {
+        font-size: 1.8rem;
+    }
 }
 
 @media all and (max-width: 340px) {
@@ -97,6 +106,9 @@
        
         max-width: 25ch;
         
+    }
+    .item__h1 {
+        font-size: 1.3rem;
     }
 }
 
