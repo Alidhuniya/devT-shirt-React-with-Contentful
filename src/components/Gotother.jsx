@@ -4,10 +4,12 @@ import Offeritem from './Offeritem';
 import Other from './Other';
 
 
+
 class Gotother extends Component {
   render() {
     return (
       <Fragment>
+      
        <Route exact path="/">
             <Other />
           </Route>

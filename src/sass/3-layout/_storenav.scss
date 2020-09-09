@@ -1,0 +1,13 @@
+.navstore {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.navstore__link {
+    font-size: 2rem;
+}
+
+.navstore__link + .navstore__link {
+    margin-left: 2.5rem;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 // import App from "./App";
-// import Offer from "./components/Offer";
-import Gotother from './components/Gotother';
-// import Offeritem from './components/Offeritem';
+// import Gotojs from './components/Gotojs';
+import Store from './components/Store';
+
 import "./sass/basic-styles-scss/abstract-and-base.scss";
 
 
@@ -12,7 +12,7 @@ import {
   BrowserRouter as Router
 } from "react-router-dom";
  
-ReactDom.render(<Router><Gotother/></Router>, document.getElementById("root"));
+ReactDom.render(<Router><Store/></Router>, document.getElementById("root"));
 
 
 if ('serviceWorker' in navigator) {
