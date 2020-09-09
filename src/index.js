@@ -1,18 +1,16 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 // import App from "./App";
-// import Gotojs from './components/Gotojs';
-import Store from './components/Store';
+import Homecontent from './components/Homecontent';
 
 import "./sass/basic-styles-scss/abstract-and-base.scss";
 
 
 import {
-
   BrowserRouter as Router
 } from "react-router-dom";
  
-ReactDom.render(<Router><Store/></Router>, document.getElementById("root"));
+ReactDom.render(<Router><Homecontent/></Router>, document.getElementById("root"));
 
 
 if ('serviceWorker' in navigator) {
