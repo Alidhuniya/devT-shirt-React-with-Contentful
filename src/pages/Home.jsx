@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
-
+import Homecontent from './../components/Homecontent';
+import Storepage from './Storepage';
 
 
 export default class Home extends Component {
@@ -7,8 +8,8 @@ export default class Home extends Component {
         return (
            
                 <Fragment>
-                Home
-                
+              <Homecontent />
+              <Storepage />
                 </Fragment>
           
         )

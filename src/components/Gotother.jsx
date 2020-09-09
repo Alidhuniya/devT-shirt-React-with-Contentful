@@ -22,6 +22,7 @@ class Gotother extends Component {
         <Switch>
           <Route exact path="/offers/:id">
             <Offeritem />
+           
           </Route>
         </Switch>
       </Fragment>
