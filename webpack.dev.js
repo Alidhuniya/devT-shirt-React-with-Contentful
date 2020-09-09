@@ -8,8 +8,8 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map none',
   devServer: {
-    host:   'localhost', 
-    // host: '192.168.1.64',
+    // host:   'localhost', 
+    host: '192.168.1.64',
     port: 8080,
     disableHostCheck: true,
   
