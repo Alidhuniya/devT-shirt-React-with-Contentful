@@ -25,7 +25,7 @@ export default class Storenav extends Component {
 								to="/other"
 								activeStyle={{ background: "#6C63FF", padding: "0.7rem" }}
 							>
-								Other
+								
 							</NavLink>
 						</li>
 						

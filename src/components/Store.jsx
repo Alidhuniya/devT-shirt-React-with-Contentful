@@ -4,7 +4,6 @@ import Gotojs from './Gotojs';
 import Storenav from './Storenav';
 import Jsitem from './Jsitem';
 import Offeritem from './Offeritem';
-import Other from './Other';
 import Gotoffer from './Gotoffer';
 
 
@@ -49,7 +48,7 @@ class Store extends Component {
           </Route>
 
 					<Route path="/other" exact>
-						<Other />
+						<Gotoffer />
 					</Route>
                     <Route exact path="/offers/:id">
             <Offeritem />

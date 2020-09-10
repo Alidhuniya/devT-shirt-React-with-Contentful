@@ -11,6 +11,7 @@ module.exports = merge(common, {
     host:   'localhost', 
     // host: '192.168.1.64',
     port: 8080,
+    historyApiFallback: true,  //source: https://stackoverflow.com/questions/27928372/react-router-urls-dont-work-when-refreshing-or-writing-manually
     disableHostCheck: true,
   
 },
