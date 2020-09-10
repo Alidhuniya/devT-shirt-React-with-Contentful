@@ -8,12 +8,6 @@ import { Route, Switch } from "react-router-dom";
 import Payment from './components/Payment';
 import Storepage from './pages/Storepage';
 
-const offerheading = {
-	textAlign : "center",
-	fontSize : "2.5rem"
-  }
-
-
 
 class App extends Component {
 	render() {
@@ -32,7 +26,6 @@ class App extends Component {
 
 					<Route path="/store" >
 					<div>
-					<h1 style = {offerheading}>Click on Language to see Items</h1>
 						<Storepage />
 						</div>
 						
