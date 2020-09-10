@@ -8,10 +8,10 @@ import "./sass/basic-styles-scss/abstract-and-base.scss";
 
 import {
 
-  BrowserRouter as Router
+ HashRouter
 } from "react-router-dom";
  
-ReactDom.render(<Router><App /></Router>, document.getElementById("root"));
+ReactDom.render(<HashRouter><App /></HashRouter>, document.getElementById("root"));
 
 
 if ('serviceWorker' in navigator) {
